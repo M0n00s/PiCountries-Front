@@ -33,11 +33,12 @@
 }
 .flecha{
 	display: none;
+	transition: all 0.5 ease;
 }
 .flecha:hover{
 	cursor: pointer;
-	transform: scale(1.5);
-	transition: all 0.5 ease;
+	transform: translateY(5px);
+	
 }
 
 @media (max-width:968px) {
