@@ -33,3 +33,14 @@
 .navbar__container a:hover {
 	color: #d8e9a8;
 }
+
+@media (max-width:768px) {
+	.navbar__container{
+		width: auto
+
+	}
+	.filter_container{
+		display: flex;
+		gap: 0.5em;
+	}
+}

@@ -30,3 +30,19 @@
 	height: 100vh;
 	background-color: #2b2c2b;
 }
+
+@media (max-width:768px) {
+	.dashboard__container {
+		flex-direction: column;
+	}
+	.dashboard__aside {
+		width:auto;
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+		height: auto;
+		justify-content: space-between;
+		padding: 1em;
+	}
+}
+
