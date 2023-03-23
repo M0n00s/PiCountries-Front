@@ -18,7 +18,7 @@ export const DashboardRouter = () => {
             <span>COUNTRIES</span>APP
           </h2>
           <p>Created by Abdel Arocha</p>
-          <span className="flecha" onClick={onShowMenu}>
+          <span className="flecha">
             <AiFillCaretDown />
           </span>
         </div>
