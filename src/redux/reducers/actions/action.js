@@ -15,7 +15,7 @@ import axios from "axios";
 export const getDataPrincipal = () => {
   return async (dispatch) => {
     const data = await axios
-      .get(`http://127.0.0.1:3001/countries`)
+      .get(`https://picountriesback.onrender.com/countries`)
       .then((data) => data.data);
 
     dispatch({
@@ -28,7 +28,7 @@ export const getDataPrincipal = () => {
 export const getCountryByName = (name) => {
   return async (dispatch) => {
     const data = await axios
-      .get(`http://127.0.0.1:3001/countries?name=${name}`)
+      .get(`https://picountriesback.onrender.com/countries?name=${name}`)
       .then((data) => data.data);
 
     dispatch({
@@ -41,7 +41,7 @@ export const getCountryByName = (name) => {
 export const getDetailCountry = (id) => {
   return async (dispatch) => {
     const data = await axios
-      .get(`http://127.0.0.1:3001/countries/${id}`)
+      .get(`https://picountriesback.onrender.com/countries/${id}`)
       .then((data) => data.data);
 
     dispatch({
@@ -88,7 +88,10 @@ export const filterByActivities = (name) => {
 //--- ruta post
 export const postActivity = (payload) => {
   return async () => {
-    const data = await axios.post("http://127.0.0.1:3001/activity", payload);
+    const data = await axios.post(
+      "https://picountriesback.onrender.com/activity",
+      payload
+    );
     return data;
   };
 };
@@ -96,7 +99,7 @@ export const postActivity = (payload) => {
 export const getActivitiesName = () => {
   return async (dispatch) => {
     const data = await axios
-      .get(`http://127.0.0.1:3001/activity`)
+      .get(`https://picountriesback.onrender.com/activity`)
       .then((data) => data.data);
 
     dispatch({
