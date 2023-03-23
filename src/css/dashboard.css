@@ -28,7 +28,7 @@
 
 .dashboard__main {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 100%;
 	background-color: #2b2c2b;
 }
 .flecha{
@@ -58,6 +58,9 @@
 		display: flex;
 		flex-direction: row;
 	}
+	.dashboard__main{
+		padding-bottom: 5em;
+	}
 }
 
 @media (max-width:690px) {
@@ -81,6 +84,7 @@
 	.dashboard__main{
 		padding-bottom: 5em;
 	}
+
 
 	
 }
