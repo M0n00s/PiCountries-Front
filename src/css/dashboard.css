@@ -74,7 +74,6 @@
 	.dashboard__responsive{
 		display: flex;
 		flex-direction: column;
-		display: none;
 	}
 	.flecha{
 		display: block;

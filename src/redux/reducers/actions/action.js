@@ -14,40 +14,37 @@ import axios from "axios";
 // get data
 export const getDataPrincipal = () => {
   return async (dispatch) => {
-    const data = await axios
-      .get(`https://picountriesback.onrender.com/countries`)
-      .then((data) => data.data);
-
-    dispatch({
-      type: GET_ALL_DATA,
-      payload: data,
-    });
+    // const data = await axios
+    //   .get(`https://picountriesback.onrender.com/countries`)
+    //   .then((data) => data.data);
+    // dispatch({
+    //   type: GET_ALL_DATA,
+    //   payload: data,
+    // });
   };
 };
 
 export const getCountryByName = (name) => {
   return async (dispatch) => {
-    const data = await axios
-      .get(`https://picountriesback.onrender.com/countries?name=${name}`)
-      .then((data) => data.data);
-
-    dispatch({
-      type: GET_DATA_BY_NAME,
-      payload: data,
-    });
+    // const data = await axios
+    //   .get(`https://picountriesback.onrender.com/countries?name=${name}`)
+    //   .then((data) => data.data);
+    // dispatch({
+    //   type: GET_DATA_BY_NAME,
+    //   payload: data,
+    // });
   };
 };
 
 export const getDetailCountry = (id) => {
   return async (dispatch) => {
-    const data = await axios
-      .get(`https://picountriesback.onrender.com/countries/${id}`)
-      .then((data) => data.data);
-
-    dispatch({
-      type: GET_DETAIL_COUNTRY,
-      payload: data,
-    });
+    // const data = await axios
+    //   .get(`https://picountriesback.onrender.com/countries/${id}`)
+    //   .then((data) => data.data);
+    // dispatch({
+    //   type: GET_DETAIL_COUNTRY,
+    //   payload: data,
+    // });
   };
 };
 
@@ -88,24 +85,23 @@ export const filterByActivities = (name) => {
 //--- ruta post
 export const postActivity = (payload) => {
   return async () => {
-    const data = await axios.post(
-      "https://picountriesback.onrender.com/activity",
-      payload
-    );
-    return data;
+    // const data = await axios.post(
+    //   "https://picountriesback.onrender.com/activity",
+    //   payload
+    // );
+    // return data;
   };
 };
 
 export const getActivitiesName = () => {
   return async (dispatch) => {
-    const data = await axios
-      .get(`https://picountriesback.onrender.com/activity`)
-      .then((data) => data.data);
-
-    dispatch({
-      type: ACTIVITIES_NAME,
-      payload: data,
-    });
+    // const data = await axios
+    //   .get(`https://picountriesback.onrender.com/activity`)
+    //   .then((data) => data.data);
+    // dispatch({
+    //   type: ACTIVITIES_NAME,
+    //   payload: data,
+    // });
   };
 };
 

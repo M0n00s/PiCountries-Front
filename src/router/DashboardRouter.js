@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Switch, Route, Redirect, useHistory } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 import { CreateActivity } from "../components/main/createAct/CreateActivity";
 import { DashboardScreen } from "../components/main/dashboard/DashboardScreen";
@@ -7,18 +7,14 @@ import { DetailCountry } from "../components/main/detail/DetailCountry";
 import { AiFillCaretDown } from "react-icons/ai";
 
 import "../css/dashboard.css";
-import { NavBar } from "../components/aside/NavBar";
-import { Filters } from "../components/aside/Filters";
+import { Aside } from "../components/aside/Aside";
 
 export const DashboardRouter = () => {
-  const history = useHistory();
-  const viewFilters = history.location.pathname;
-  const [show, setShow] = useState(false);
-
+  const [show, setshow] = useState(false);
   const onShowMenu = () => {
-    setShow(!show);
+    setshow(!show);
   };
-
+  console.log(show);
   return (
     <div className="dashboard__container">
       <aside className="dashboard__aside">
@@ -31,13 +27,7 @@ export const DashboardRouter = () => {
             <AiFillCaretDown />
           </span>
         </div>
-        <div
-          className="dashboard__responsive"
-          style={{ display: show ? "block" : "none" }}
-        >
-          <NavBar />
-          {viewFilters === "/client/dashboard" && <Filters />}
-        </div>
+        <Aside />
       </aside>
       <main className="dashboard__main">
         <Switch>
