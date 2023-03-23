@@ -1,0 +1,70 @@
+.detail__container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+.detail__img {
+	display: flex;
+	justify-content: center;
+}
+.detail__data {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	color: white;
+	font-family: "Red Hat Mono", monospace;
+}
+.detail__activity {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+span {
+	color: #d8e9a8;
+}
+span a {
+	text-decoration: none;
+	color: #d8e9a8;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+span a:hover {
+	color: #4e9f3d;
+}
+.goBack {
+	padding: 2em 1em 0.8em 0.8em;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.goBack:hover {
+	color: #4e9f3d;
+}
+
+.detail__activities {
+	width: 70%;
+	text-align: center;
+}
+.detail__activityContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1em;
+}
+.detail__activitiesBox {
+	background-color: hsl(0, 0%, 100%, 20%);
+	padding: 1em;
+	border-radius: 10px;
+}
+.detail__data table {
+	width: 40%;
+	max-width: 380px;
+	background-color: hsl(0, 0%, 100%, 20%);
+	padding: 0.8em;
+	border-radius: 10px;
+}

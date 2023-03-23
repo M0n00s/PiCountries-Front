@@ -1,0 +1,42 @@
+.dashBoardScreen__container {
+	height: 100%;
+}
+.dashBoardScreen__submenu {
+	height: 30px;
+	padding: 2em 0.8em;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: stretch;
+}
+.cards__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	text-align: center;
+}
+
+.button {
+	background: none;
+	border: none;
+	padding: 0px 10px;
+	color: #d8e9a8;
+	font-size: medium;
+	cursor: pointer;
+}
+.button:hover {
+	color: #4e9f3d;
+}
+
+.input {
+	width: 100%;
+	border: 0;
+	border-bottom: 2px solid white;
+	outline: 0;
+	font-size: 0.8rem;
+	color: white;
+	padding: 5px 0;
+	background: transparent;
+}

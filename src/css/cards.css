@@ -1,0 +1,40 @@
+/* .cards__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 5px;
+} */
+.cards__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 25%;
+	max-width: 180px;
+	height: 100px;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+	cursor: pointer;
+	font-family: "Red Hat Mono", monospace;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
+	box-shadow: 10px 10px 20px -12px rgba(255, 255, 255, 0.25);
+}
+.cards__card p,
+.cards__card h4 {
+	display: none;
+}
+.cards__card:hover {
+	background-color: rgb(20, 20, 20);
+	background-blend-mode: soft-light;
+}
+.cards__card:hover > h4,
+.cards__card:hover > p {
+	display: block;
+}
+.cards__card p {
+	font-size: small;
+}
