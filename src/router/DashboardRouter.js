@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Switch, Route, Redirect, useHistory } from "react-router-dom";
 
 import { CreateActivity } from "../components/main/createAct/CreateActivity";
@@ -13,6 +13,11 @@ import { Filters } from "../components/aside/Filters";
 export const DashboardRouter = () => {
   const history = useHistory();
   const viewFilters = history.location.pathname;
+  const [show, setShow] = useState(false);
+
+  const onShowMenu = () => {
+    setShow(!show);
+  };
 
   return (
     <div className="dashboard__container">
@@ -22,11 +27,14 @@ export const DashboardRouter = () => {
             <span>COUNTRIES</span>APP
           </h2>
           <p>Created by Abdel Arocha</p>
-          <span className="flecha">
+          <span className="flecha" onClick={onShowMenu}>
             <AiFillCaretDown />
           </span>
         </div>
-        <div className="dashboard__responsive">
+        <div
+          className="dashboard__responsive"
+          style={{ display: show ? "block" : "none" }}
+        >
           <NavBar />
           {viewFilters === "/client/dashboard" && <Filters />}
         </div>
