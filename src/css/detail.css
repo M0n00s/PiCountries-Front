@@ -15,6 +15,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 2em;
 	color: white;
 	font-family: "Red Hat Mono", monospace;
@@ -67,4 +68,11 @@ span a:hover {
 	background-color: hsl(0, 0%, 100%, 20%);
 	padding: 0.8em;
 	border-radius: 10px;
+}
+
+@media (max-width:690px) {
+	.detail__data{
+		gap: 0px;
+	}
+
 }
