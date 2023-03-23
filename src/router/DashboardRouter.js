@@ -10,11 +10,6 @@ import "../css/dashboard.css";
 import { Aside } from "../components/aside/Aside";
 
 export const DashboardRouter = () => {
-  const [show, setshow] = useState(false);
-  const onShowMenu = () => {
-    setshow(!show);
-  };
-  console.log(show);
   return (
     <div className="dashboard__container">
       <aside className="dashboard__aside">
